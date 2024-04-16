@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+class Book {
+private:
+    std::string title;
+    std::string author;
+    int year;
+
+public:
+    // Constructor
+    Book(const std::string& t, const std::string& a, int y) : title(t), author(a), year(y) {}
+
+    // Destructor
+    ~Book() {}
+
+    // Function to display book details
+    void display() {
+        std::cout << "Title: " << title << std::endl;
+        std::cout << "Author: " << author << std::endl;
+        std::cout << "Year: " << year << std::endl;
+    }
+};
+
+int main() {
+    // Create a Book object
+    Book myBook("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+
+    // Display book details
+    myBook.display();
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    // Define an array of floats
+    float arr[] = {1.1, 2.2, 3.3, 4.4, 5.5};
+
+    // Create a pointer to the array
+    float *ptr = arr;
+
+    // Display the value of the array using the pointer
+    std::cout << "Value of array: ";
+    for (int i = 0; i < 5; ++i) {
+        std::cout << *(ptr + i) << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}

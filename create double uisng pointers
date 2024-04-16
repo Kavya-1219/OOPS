@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    // Declare a double variable
+    double myDouble = 3.14;
+
+    // Declare a pointer to double and initialize it with the address of myDouble
+    double *doublePtr = &myDouble;
+
+    // Display the value of the double using the pointer
+    std::cout << "Value of double: " << *doublePtr << std::endl;
+
+    return 0;
+}

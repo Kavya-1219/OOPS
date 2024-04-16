@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    // Define a string literal
+    const char *str = "Hello, world!";
+
+    // Create a pointer to the string
+    const char *ptr = str;
+
+    // Display the value of the string using the pointer
+    std::cout << "Value of string: " << ptr << std::endl;
+
+    return 0;
+}

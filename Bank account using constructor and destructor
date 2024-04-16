@@ -1,0 +1,24 @@
+#include <iostream>
+class BankAccount {
+private:
+    int accountNumber;
+    double balance;
+public:
+    // Constructor
+    BankAccount(int accNum, double bal) : accountNumber(accNum), balance(bal) {}
+
+    // Destructor
+    ~BankAccount() {}
+
+    void display() {
+        std::cout << "Account Number: " << accountNumber << std::endl;
+        std::cout << "Balance: " << balance << std::endl;
+    }
+};
+int main() {
+    // Create a BankAccount object
+    BankAccount account(123456, 1000.0);
+    // Display account details
+    account.display();
+    return 0;
+}

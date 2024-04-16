@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+class Student {
+private:
+    std::string name;
+    int age;
+
+public:
+    // Constructor
+    Student(const std::string& n, int a) : name(n), age(a) {}
+
+    // Destructor
+    ~Student() {}
+
+    // Function to display student details
+    void display() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+    }
+};
+
+int main() {
+    // Create a Student object
+    Student myStudent("John Doe", 20);
+
+    // Display student details
+    myStudent.display();
+
+    return 0;
+}

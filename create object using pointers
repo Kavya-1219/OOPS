@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+// Define a simple class
+class MyClass {
+public:
+    // Constructor to initialize attributes
+    MyClass(int id, const std::string& name) : id_(id), name_(name) {}
+
+    // Function to display object attributes
+    void display() const {
+        std::cout << "ID: " << id_ << ", Name: " << name_ << std::endl;
+    }
+
+private:
+    int id_;
+    std::string name_;
+};
+
+int main() {
+    // Create an object of MyClass
+    MyClass obj(101, "John");
+
+    // Create a pointer to the object
+    MyClass* ptr = &obj;
+
+    // Display the attributes using the pointer
+    ptr->display();
+
+    return 0;
+}
